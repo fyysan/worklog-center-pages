@@ -2,34 +2,18 @@
   "name": "工作记录中心",
   "short_name": "工作记录",
   "description": "工作流水、待处理管理与运维知识沉淀",
-  "start_url": "/worklog-center-pages/",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#f4f7fc",
   "theme_color": "#0b5bd3",
   "lang": "zh-CN",
   "orientation": "portrait-primary",
-  "categories": [
-    "productivity",
-    "business"
-  ],
+  "categories": ["productivity", "business"],
   "shortcuts": [
-    {
-      "name": "新建事项",
-      "short_name": "新建",
-      "url": "/worklog-center-pages/?action=new"
-    },
-    {
-      "name": "搜索事项",
-      "short_name": "搜索",
-      "url": "/worklog-center-pages/?page=tasks"
-    }
+    { "name": "新建事项", "short_name": "新建", "url": "/?action=new" },
+    { "name": "搜索事项", "short_name": "搜索", "url": "/?page=tasks" }
   ],
   "icons": [
-    {
-      "src": "/worklog-center-pages/icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
-    }
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
   ]
 }

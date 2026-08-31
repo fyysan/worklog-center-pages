@@ -1,5 +1,5 @@
 const CACHE = 'worklog-shell-v18'
-const SHELL = ['/worklog-center-pages/', '/worklog-center-pages/manifest.webmanifest', '/worklog-center-pages/icon.svg']
+const SHELL = ['/', '/manifest.webmanifest', '/icon.svg']
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(SHELL)))
@@ -30,7 +30,7 @@ self.addEventListener('fetch', (event) => {
   }).catch(async () => {
     const cached = await caches.match(event.request)
     if (cached) return cached
-    if (event.request.mode === 'navigate') return caches.match('/worklog-center-pages/')
+    if (event.request.mode === 'navigate') return caches.match('/')
     return Response.error()
   }))
 })
