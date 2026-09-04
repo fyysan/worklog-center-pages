@@ -1,4 +1,4 @@
-const CACHE = 'worklog-shell-v20'
+const CACHE = 'worklog-shell-v21'
 const SHELL = ['/', '/manifest.webmanifest', '/icon.svg']
 
 self.addEventListener('install', (event) => {
